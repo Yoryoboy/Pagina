@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "grovana";
+  src: url(../fonts/GrovanaRegularRough.otf); }
+
+@font-face {
+  font-family: "motionp";
+  src: url(../fonts/MotionPicture_PersonalUseOnly.ttf); }
+
+body, video {
+  width: 100%;
+  height: 100vh; }
+
+video {
+  position: fixed;
+  object-fit: cover;
+  z-index: -10; }
+
+.nav-link, .divDisco {
+  font-family: grovana;
+  font-size: 20px; }
+
+section p {
+  margin: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar-brand h1 {
+  font-family: motionp;
+  font-size: 75px;
+  letter-spacing: 1.5px;
+  text-shadow: .5rem .5rem .8rem black; }
+
+footer div a img {
+  width: 40px;
+  margin: 0px 20px;
+  opacity: 50%; }
+
+.nombres, h2 {
+  font-family: grovana; }
+
+#gallery .col-lg-3 {
+  padding: 5px; }
+
+#gallery img {
+  width: 100%;
+  height: 230px;
+  padding-top: 5px; }
+
+#gallery img:hover {
+  border: 2px solid white; }
+
+#gallery-modal .modal-img {
+  width: 100%; }
+
+  .discoDes {
+    align-content: center;
+    align-items: center;
+  }
+
+  .paragraph {
+    margin: auto;
+  }

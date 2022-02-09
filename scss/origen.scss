@@ -1,0 +1,78 @@
+
+
+
+@font-face {	
+	font-family: "grovana";
+    src: url(../fonts/GrovanaRegularRough.otf);		
+}
+
+@font-face {	
+	font-family: "motionp";
+    src: url(../fonts/MotionPicture_PersonalUseOnly.ttf);		
+}
+
+@mixin size($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+body {
+	@include size(100%, 100vh)
+}
+
+video {
+	@extend body;
+	position: fixed;
+    object-fit: cover;
+    z-index: -10;
+}
+
+@mixin G20($ff, $fs) {
+	font-family: $ff;
+	font-size: $fs;
+}
+
+.nav-link, .divDisco {
+	@include G20(grovana, 20px)
+}
+
+section p {
+	margin-top: 3px;
+	padding-bottom: 10%;
+ }
+
+ .navbar-brand h1 {
+	font-family: motionp;
+	font-size: 75px;
+	letter-spacing: 1.5px;
+	text-shadow: .5rem .5rem .8rem black; 
+}
+
+footer div a img {
+	width: 40px;
+	margin: 0px 20px;
+	opacity: 50%; 
+}
+
+.nombres, h2 {
+	font-family: grovana; 
+}
+
+#gallery .col-lg-3 {
+	padding: 5px; 
+}
+  
+  #gallery img {
+	width: 100%;
+	height: 230px;
+	padding-top: 5px; 
+}
+  
+  #gallery img:hover {
+	border: 2px solid white; 
+}
+  
+  #gallery-modal .modal-img {
+	width: 100%; 
+}
+  

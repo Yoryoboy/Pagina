@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Página - Merchandise</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="musica, rock, banda, pagina">
+        <meta name="description" content="Integrantes de Página">
+        <meta name="author" content="jorge diaz">
+        <meta name="robots" content="index">
+        <link rel="stylesheet" type="text/css" href="css/destino.css"> 
+        <link rel="stylesheet" type="text/css" href="style/estilo.css"> 
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="merch.js" async></script>
+
+        <meta content="width=device-width, initial-scale=1" name="viewport" />    
+    </head>
+      
+    <body>
+
+        <nav class="MerchNav navbar navbar-expand-lg navbar-dark bg-dark py-1">
+             <div class="container bg-dark">
+                 <a href="index.html" class="navbar-brand"><h1>Página</h1></a>
+                 <button
+                   class="navbar-toggler"
+                   type="button" 
+                   data-bs-toggle="collapse" 
+                   data-bs-target="#navmenu">
+                   <span class="navbar-toggler-icon"></span>               
+                 </button>
+
+                 <div class=" collapse navbar-collapse" id="navmenu">
+                     <ul class="navbar-nav ms-auto ">
+                         <li class="nav-item mx-2">
+                             <a href="integrantes.html" class="nav-link">Integrantes</a>
+                         </li>
+                         <li class="nav-item mx-2">
+                            <a href="galeria.html" class="nav-link">Galería</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a href="discografia.html" class="nav-link">Discografía</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a href="contacto.html" class="nav-link">Contacto</a>
+                        </li>
+                     </ul>
+                 </div>
+             </div>
+        </nav>
+
+        <section>
+            <div class="listaDeProductos text-center">
+                <div class="productos">
+                    <!-- renderizar items -->                   
+                </div>
+                <div class="cart">
+                    <div class="cart-header">
+                        <div class="column1">Articulo</div>
+                        <div class="column2">Precio Unitario</div>
+                        <div class="column3">Unidades</div>
+                    </div>
+                    <div class="cart-items">
+                        <!-- renderizar carrito aqui -->
+                    </div>
+                    <div class="cart-footer text-center">
+                        <div class="subtotal">
+                        </div>
+                        <button class="btn btn-success checkout text-center" type="button" data-toggle="modal"
+                        data-target="#comprarModal">
+                            Finalizar Compra
+                        </button>
+                    </div>
+
+                </div>
+                    <!-- START MODAL COMPRA -->
+                    <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Pronto recibirá su pedido. Muchas gracias por su compra!</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END MODAL COMPRA -->
+    
+
+            </div>
+        </section>
+
+
+
+
+        <footer class="p-3">
+            <div class="d-flex justify-content-center" >
+                <a href="https://www.facebook.com/PaginaBandaV" target="_blank">
+                    <img src="img/facebook_icon.png"></a>
+                <a href="https://www.youtube.com/channel/UCRB5bfyz_PvQz0-O41rsTIA" target="_blank">
+                    <img src="img/youtube_icon.png"></a>   
+                <a href="https://twitter.com/PaginaBanda" target="_blank">
+                    <img src="img/twitter_icon.png"></a>  
+                <a href="https://www.instagram.com/paginabanda/?hl=en" target="_blank">
+                    <img src="img/instagram_icon.png"></a>
+                <a href="https://open.spotify.com/artist/3mTrTqXz7pbfoIIBmUHQ6Q" target="_blank">
+                    <img src="img/spotify_icon.png"></a>  
+                <a href="https://soundcloud.com/paginabanda" target="_blank">
+                    <img src="img/soundcloud_icon.png"></a>           
+            </div>
+        </footer>
+
+ 
+
+
+        
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+        <script src="js/bootstrap.min.js"></script> 
+    </body>
+</html>
+ 
+
